@@ -11,9 +11,9 @@
     <iron-ajax auto
       url="{{url}}"
       handle-as="json"
-      last-response="{{data}}">
+      last-response="{{_data}}">
     </iron-ajax>
-    <h2><span>{{data.length}}</span> github-issues</h2>
+    <h2><span>{{_data.length}}</span> github-issues</h2>
   </template>
 </dom-module>
 <script>
@@ -21,12 +21,13 @@
     is: "github-issues",
     properties: {
     	repo: String,
-    	url: {
+    	_url: {
     		type: String,
-    		computed: "getURL(repo)"
-    	}
+    		computed: "_getURL(repo)"
+    	},
+    	_data:String 
     },
-    getURL: function(repo){
+    _getURL: function(repo){
     	return "https://api.github.com/repos/"+repo+"/issues"
     }
   });

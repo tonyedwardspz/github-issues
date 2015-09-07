@@ -1,0 +1,33 @@
+<link rel="import" href="../iron-ajax/iron-ajax.html">
+<!--
+`<github-issues>` 
+@demo demo.html
+-->
+
+<dom-module id="github-issues">
+  <template>
+    <style>
+    </style>
+    <iron-ajax auto
+      url="{{url}}"
+      handle-as="json"
+      last-response="{{data}}">
+    </iron-ajax>
+    <h2><span>{{data.length}}</span> github-issues</h2>
+  </template>
+</dom-module>
+<script>
+  Polymer({
+    is: "github-issues",
+    properties: {
+    	repo: String,
+    	url: {
+    		type: String,
+    		computed: "getURL(repo)"
+    	}
+    },
+    getURL: function(repo){
+    	return "https://api.github.com/repos/"+repo+"/issues"
+    }
+  });
+</script>

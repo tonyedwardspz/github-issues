@@ -3,6 +3,7 @@
 ##A Polymer element for displaying the number of issues for a given URL
 
 [demo](http://jsbin.com/roderuzesu/edit?html,output)
+
 To use 
 ```
 <github-issues

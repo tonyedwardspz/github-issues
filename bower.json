@@ -1,0 +1,26 @@
+{
+  "name": "github-issues",
+  "version": "0.0.1",
+  "homepage": "https://github.com/tonyedwardspz/github-issues",
+  "authors": [
+    "Marcus Hitchins <tony.edwards@gmail.com>"
+  ],
+  "description": "Polymer element displaying issues for given repo",
+  "keywords": [
+    "search",
+    "web-components",
+    "Polymer"
+  ],
+  "main": "github-issues.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  }
+}

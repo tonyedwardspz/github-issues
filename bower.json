@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "homepage": "https://github.com/tonyedwardspz/github-issues",
   "authors": [
-    "Marcus Hitchins <tony.edwards@gmail.com>"
+    "Tony Edwards"
   ],
   "description": "Polymer element displaying issues for given repo",
   "keywords": [

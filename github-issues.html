@@ -16,7 +16,7 @@
     </iron-ajax>
     
     <h2>
-      <span>{{_data.length}}</span> github-issues
+      <span>{{_data.length}}</span>/<span>{{_number}}</span> open issues</h2>
     </h2>
     
   </template>
@@ -30,10 +30,17 @@
       _url: {
         type: String,
         computed: "_getURL(repo)"
+      },
+      _number:{
+        type: String,
+        computed: "_getNumber(_data)"
       }
     },
     _getURL: function(repo){
       return "https://api.github.com/repos/"+repo+"/issues"
+    },
+    _getNumber: function(_data) {
+      return _data[0].number
     }
   });
 </script>

@@ -16,9 +16,9 @@
     </iron-ajax>
     
     <h2>
-      <span>{{_data.length}}</span>/<span>{{_number}}</span> open issues</h2>
+      <span>{{_data.length}}</span>/<span>{{_number}}</span> open issues
     </h2>
-    
+ 
   </template>
 </dom-module>
 
@@ -34,6 +34,9 @@
       _number:{
         type: String,
         computed: "_getNumber(_data)"
+      },
+      _hasOpenIssues: {
+        computed: "_getOpenIssues(_data)"
       }
     },
     _getURL: function(repo){
@@ -41,6 +44,9 @@
     },
     _getNumber: function(_data) {
       return _data[0].number
+    },
+    _getOpenIssues: function(_data) {
+      return _data.length == _data[0].number ? false : true
     }
   });
 </script>

@@ -2,7 +2,7 @@
 
 ##A Polymer element for displaying the number of issues for a given URL
 
-[demo](http://jsbin.com/roderuzesu/edit?html,output)
+[demo](http://jsbin.com/qeyame/edit?html,output)
 
 To use 
 ```

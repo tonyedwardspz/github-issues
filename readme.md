@@ -13,4 +13,4 @@ To use
 
 Needed
 
-```url``` : The username and repositry name of the repo.
+```repo``` : The username and repositry name of the repo.

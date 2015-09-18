@@ -1,18 +1,23 @@
 {
   "name": "github-issues",
-  "version": "0.0.1",
+  "version": "0.5.0",
+  "description": "A polymer element for displaying the number of open/closed issues a project has",
   "homepage": "https://github.com/tonyedwardspz/github-issues",
   "authors": [
     "Tony Edwards"
   ],
   "description": "Polymer element displaying issues for given repo",
   "keywords": [
-    "search",
+    "github",
     "web-components",
     "Polymer"
   ],
   "main": "github-issues.html",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tonyedwardspz/github-issues"
+  },
   "ignore": [
     "**/.*",
     "node_modules",
@@ -20,6 +25,10 @@
     "test",
     "tests"
   ],
+  "dependencies": {
+    "iron-ajax": "polymerelements/iron-ajax#^1.0.0",
+    "polymer": "Polymer/polymer#^1.0.0"
+  },
   "devDependencies": {
     "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
   }
